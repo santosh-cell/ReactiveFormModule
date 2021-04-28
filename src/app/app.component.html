@@ -1,0 +1,18 @@
+<h1>Reactive form Module</h1>
+
+<form [formGroup]='info' (ngSubmit)="onSubmit(info.value)">
+<input type="text" formControlName="name" size="50"
+placeholder="Name"><br><br>
+<input type="text" formControlName="fathername" size="50"
+placeholder="Father Name"><br><br>
+<input type="text" formControlName="email" size="50"
+placeholder="Email"><br><br>
+<input type="number" formControlName="age" size="50"
+placeholder="Age"><br><br>
+<input type="text" formControlName="contact" size="50"
+placeholder="Contact"><br><br>
+<input type="text" formControlName="massage" size="50"
+placeholder="feedback"><br><br>
+
+<button type="submit">Submit</button>
+</form>
